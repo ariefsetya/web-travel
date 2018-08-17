@@ -7,7 +7,7 @@ $kota_tujuan = $_SESSION['kota_tujuan'];
 
 $sql  = "SELECT a.*, b.nama as transportasi FROM rute a 
 		LEFT JOIN transportasi b on a.transportasi_id=b.id
-		WHERE a.kota_asal_id='$kota_asal' AND a.kota_tujuan_id='$kota_tujuan'";
+		WHERE (a.kota_asal_id='$kota_asal' AND a.kota_tujuan_id='$kota_tujuan') OR (a.kota_asal_id='$kota_tujuan' AND a.kota_tujuan_id='$kota_asal')";
 $rute = mysqli_query($koneksi,$sql);
 ?>
 <div class="bgimg-2">

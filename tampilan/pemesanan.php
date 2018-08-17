@@ -10,11 +10,6 @@ $kota_tujuan = $_SESSION['kota_tujuan'];
 
 $id = $_GET['id'];
 
-$sql  = "SELECT a.*, b.nama as transportasi FROM rute a 
-		LEFT JOIN transportasi b on a.transportasi_id=b.id
-		WHERE a.kota_asal_id='$kota_asal' AND a.kota_tujuan_id='$kota_tujuan'";
-$rute = mysqli_query($koneksi,$sql);
-
 ?>
 <div class="bgimg-2">
 	<div class="container">
