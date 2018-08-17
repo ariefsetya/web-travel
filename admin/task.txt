@@ -1,0 +1,67 @@
+Modul & Data :
+1. Kota (folder: kota)
+	field: 
+	- nama (text)
+
+	data:
+	1. DKI Jakarta
+	2. Bekasi
+	3. Tangerang
+	4. Depok
+	5. Bogor dst
+
+2. Transportasi (folder: transportasi)
+	field:
+	- nama (text)
+
+	data:
+	1. Kereta Api
+	2. Pesawat dst
+3. Jenis Penumpang (folder: jenis_penumpang)
+	field:
+	- nama (text)
+	- maks_usia (number)
+
+	data: 
+	1. Anak-anak
+	2. Dewasa dst
+4. Metode Pembayaran (folder: metode_pembayaran)
+	field:
+	- nama (text)
+	- konfirmasi (select -> Ya (value: 1) & Tidak (value: 0))
+
+	data:
+	1. Tunai
+	2. Bank Transfer dst
+5. Status Pembayaran (folder: status_pembayaran)
+	field:
+	- nama (text)
+
+	data:
+	1. Belum Dibayar
+	2. Menunggu Konfirmasi
+	3. Lunas
+
+Struktur Query :
+	1. Semua Data 	: SELECT field1, field2 FROM nama_tabel
+	2. Satu Data 	: SELECT field1, field2 FROM nama_tabel WHERE field3='value3'
+	2. Simpan		: INSERT INTO nama_tabel (field1, field2) VALUES ('value1','value2')
+	3. Perbarui		: UPDATE nama_tabel SET field1='value1', field2='value2' WHERE field3='value3'
+	4. Hapus		: DELETE FROM nama_tabel WHERE field1='value3'
+
+Langkah-langkah :
+1. copy folder kota di dalam folder proses, paste di folder yang sama kemudian rename folder yang baru dicopy menjadi nama folder sesuai modul masing-masing
+2. sesuaikan isi query di tiap-tiap file
+3. Ubah redirect (header:location) sesuai file tujuan masing-masing
+4. Ubah pesan berhasil/gagal sesuai modul masing-masing
+3. copy folder kota di dalam folder tampilan, paste di folder yang sama kemudian rename folder yang baru dicopy menjadi nama folder sesuai modul masing-masing
+4. sesuaikan isi input dalam form di tiap-tiap file
+5. sesuaikan action form sesuai file tujuan masing-masing
+
+Pembagian Tugas:
+1. Beben & Edwin Fardani 	: modul transportasi
+2. Immanuel & Roy 			: modul jenis_penumpang
+3. Edwin & Dendi			: modul metode_pembayaran
+4. Kasih & Linda			: modul status_pembayaran
+5. Reno						: mengumpulkan data kota besar di Indonesia & transportasi dari dan ke kota yang sudah dikumpulkan 
+6. Arief					: modul rute, modul transaksi & front web
