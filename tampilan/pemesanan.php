@@ -25,6 +25,12 @@ $id = $_GET['id'];
 		    			<td colspan="4">Penumpang <?=$i+1;?></td>
 		    		</tr>
 		    		<tr>
+		    			<td>Jenis Penumpang</td>
+		    			<td>NIK</td>
+		    			<td>Nama</td>
+		    			<td>Tanggal Lahir</td>
+		    		</tr>
+		    		<tr>
 		    			<td><select required name="jenis[]" class="w3-select">
 		    				<?php foreach($jenis as $row){ ?>
 		    				<option value="<?=$row['id'];?>"><?=$row['nama']." ( > ".$row['maks_usia']." tahun )";?></option>
@@ -38,7 +44,7 @@ $id = $_GET['id'];
 		    		<tr>
 		    			<td colspan="3"></td>
 		    			<td>
-		    				<button type="submit" class="w3-button w3-blue">
+		    				<button type="submit" class="w3-button w3-blue w3-right">
 		    					Lanjutkan
 		    				</button>
 		    			</td>

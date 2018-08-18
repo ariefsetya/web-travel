@@ -11,7 +11,7 @@ if(isset($_POST['email'])){
 	$sql = "SELECT * FROM user WHERE jenis='admin' AND email='$email'
 			AND password = '$pass'";
 	$res = mysqli_query($koneksi,$sql);
-	if($res){
+	if(mysqli_num_rows($res)==1){
 		$row = mysqli_fetch_assoc($res);
 		$_SESSION['email'] = $row['email'];
 		$_SESSION['nama'] = $row['nama'];
