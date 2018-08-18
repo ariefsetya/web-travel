@@ -8,11 +8,6 @@ $tanggal = $_SESSION['tanggal'];
 $penumpang = $_SESSION['penumpang'];
 ?>
 <div style="width: 100%;height: 10px;background: #333;"></div>
-<div style="width: 100%;background: DodgerBlue;">
-  <div class="container" style="text-align: right;color:white;">
-    <a href="index.php?m=register">Daftar</a> | <a href="">Masuk</a>
-  </div>
-</div>
 <div class="bgimg-1">
   <div class="caption">
     <span class="border">More Travelling, More Experiences</span>

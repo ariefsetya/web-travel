@@ -1,0 +1,22 @@
+Online Demo
+Customer 	: http://travel.copasin.id/
+Admin 		: http://travel.copasin.id/admin/
+
+Offline Demo
+Customer 	: http://localhost/web_travel/
+Admin 		: http://localhost/web_travel/admin/
+
+Admin Login :
+E-Mail		: admin@travel.id
+Password	: admin123
+
+Anggota Kelompok "Travel Web":
+1. Arief Setya			201543501125
+2. Edwin Rahman P 		201543501121
+3. Immanuel				201543501165
+4. Beben 				201543501186
+5. Karnasih				201543501194
+6. Maulinda				201543501137
+7. Edwin Fardani		201743579094
+8. Dendi Abdul Rohim	201743570008
+9. Roy Rachmat Syaiful	201543501128
